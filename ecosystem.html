@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ecosystem | OXIQEL</title>
+<meta name="description" content="How the OXIQEL ecosystem is designed to work: one account across console, handheld, cloud and display, the OXIQEL DIRECT evidence based order flow, the launcher library with honest statuses, and the cloud streaming pilot design.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#0b0e14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OXIQEL">
+<meta property="og:title" content="Ecosystem | OXIQEL">
+<meta property="og:description" content="How the OXIQEL ecosystem is designed to work: one account across console, handheld, cloud and display, the OXIQEL DIRECT evidence based order flow, the launcher library with honest statuses, and the cloud streaming pilot design.">
+<meta property="og:url" content="https://oxiqel.com/ecosystem.html">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="statusbar">Preview site. OXIQEL is in development. Nothing is for sale yet and checkout is locked.</div>
+<header class="site">
+  <div class="wrap">
+    <a class="wordmark" href="index.html"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#151b29"/><g fill="#e8ecf3"><polygon points="10,10 22,10 22,54 10,54"/><polygon points="26,10 42,10 30,30"/><polygon points="26,34 31,34 44,54 28,54"/></g><rect x="50" y="10" width="4" height="44" fill="#3b82f6"/></svg>OXIQEL</a>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a class="current" aria-current="page" href="ecosystem.html">Ecosystem</a>
+      <a href="support.html">Support</a>
+      <a href="policies.html">Policies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="block">
+  <div class="wrap">
+    <h2 class="title">One account, every device</h2>
+    <p class="lede">The durable idea behind OXIQEL is not any single device. It is one identity, one library, one set of cloud saves and one store account consumed by the console, the handheld, the cloud client and the headset alike. The services are designed as network services with documented interfaces, so each new device joins the same account instead of starting a new one.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>The system software</h3>
+        <p>ONE, GO and CAST local streaming are designed on an immutable, image based Linux system with signed updates and atomic rollback, a gamescope class session for the television and handheld interface, and Vulkan as the native game interface. Windows games are addressed through a Proton class compatibility layer.</p>
+      </div>
+      <div class="card">
+        <h3>Compatibility, stated honestly</h3>
+        <p>Many Windows games run through a compatibility layer. Some do not, especially competitive multiplayer titles whose kernel level anti cheat refuses it, title by title, at the publisher's sole discretion. OXIQEL will maintain a per title tested database rather than a catalogue wide promise, and no compatibility is claimed for any title that has not been tested.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud streaming</h3>
+        <p>The pilot design starts with local streaming inside the home, from your own console or PC to CAST or GO, at no service cost. A hosted cloud service is an economics question before it is a feature: streaming costs real money per hour, so no subscription price will be published before a pilot measures it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block band">
+  <div class="wrap">
+    <h2 class="title">OXIQEL DIRECT: ordering on evidence</h2>
+    <p class="lede">DIRECT is the manufacturer connected order flow, designed and tested as a prototype gateway. Its rules are the product: an order is an offer to buy and is accepted only when the manufacturer confirms production capacity; payment states move only on the payment processor's confirmation; shipping states move only on carrier evidence; refunds complete only on processor confirmation. The gateway code passes its full local test suite, and it refuses live payment keys outright. No real manufacturer connection exists yet, because no manufacturer API exists until the quotation replies land.</p>
+    <div class="note">The storefront on this site is a sandbox. Checkout is locked and will stay locked until manufacturing, payments, legal and support are verified end to end with a real test order.</div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2 class="title">The launcher library</h2>
+    <p class="lede">The OXIQEL launcher prototype lists only titles its owner actually holds, each with its real verified status, and Play stays disabled until a verified build exists. This is the same honesty rule the store runs on: a library that shows what is true, not what would look good. The current library, as it stands today:</p>
+    <div id="lib"></div>
+    <div class="note">No third party store is integrated and no third party game is listed as available. Statuses above are the verified state of each title in the owner's own catalogue.</div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">OXIQEL</a>
+    <nav class="foot">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="ecosystem.html">Ecosystem</a>
+      <a href="support.html">Support</a>
+      <a href="policies.html">Policies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>OXIQEL is a gaming hardware company in development. The company is in formation and no product has been manufactured yet.</p>
+    <p>Preview site. Nothing is for sale yet and checkout is locked.</p>
+    <p>&copy; 2026 OXIQEL. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const G=[
+ {t:"Rise of the 36",s:"In development",d:"Source port compiled under its engine's current version, with its automation test suite passing. No playable level yet; in world play is unverified."},
+ {t:"RIOTVERSE",s:"In development",d:"Packaged build verified on desktop with a bot match completed end to end. Production art pass outstanding."},
+ {t:"Place of Peace VR",s:"Source recovered",d:"Headless simulation tests pass and signed Quest builds exist in the portfolio pipeline. Device proof comes from the owner's headset sessions."},
+ {t:"Ride Earth VR",s:"Source recovered",d:"Headless simulation tests pass and signed Quest builds exist in the portfolio pipeline. Device proof comes from the owner's headset sessions."},
+ {t:"36 Trials: Temple Circuit",s:"Source recovered",d:"Headless tests pass. A standalone Quest app record exists and builds have been delivered through the portfolio pipeline."},
+ {t:"Place of Peace Invitational VR",s:"Published world, game incomplete",d:"The social world is published platform side, but the game itself is incomplete and is not presented as a finished, playable release."}
+];
+document.getElementById('lib').innerHTML=G.map(g=>
+ '<div class="libcard"><h3>'+g.t+'<span class="badge">'+g.s+'</span></h3><p>'+g.d+'</p></div>').join('');
+</script>
+</body>
+</html>
