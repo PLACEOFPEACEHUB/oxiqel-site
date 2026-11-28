@@ -15,11 +15,12 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="statusbar">Preview site. OXIQEL is in development. Nothing is for sale yet and checkout is locked.</div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="statusbar"><span class="dot" aria-hidden="true">●</span>Preview site. OXIQEL is in development. Nothing is for sale yet and checkout is locked.</div>
 <header class="site">
   <div class="wrap">
     <a class="wordmark" href="index.html"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#151b29"/><g fill="#e8ecf3"><polygon points="10,10 22,10 22,54 10,54"/><polygon points="26,10 42,10 30,30"/><polygon points="26,34 31,34 44,54 28,54"/></g><rect x="50" y="10" width="4" height="44" fill="#3b82f6"/></svg>OXIQEL</a>
-    <nav class="main">
+    <nav class="main" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="ecosystem.html">Ecosystem</a>
@@ -30,9 +31,11 @@
   </div>
 </header>
 
+<main id="main">
 <section class="block">
   <div class="wrap">
-    <h2 class="title">Contact</h2>
+    <p class="kicker">Contact · Written first</p>
+    <h1 class="title">Contact</h1>
     <p class="lede">OXIQEL works in writing. Choose a topic and send the form; it opens in your email app, addressed to us, with your message ready to send. You can also write to us directly at <a href="mailto:placeofpeacellc56@gmail.com">placeofpeacellc56@gmail.com</a>.</p>
     <form class="contact" method="post" action="#">
       <label for="topic">Topic</label>
@@ -54,11 +57,12 @@
     <div class="note">Manufacturers: written requests for quotation for the console, handheld, controller and display programs were issued on 16 November 2026 and replies are tracked against the engineering gates in our research record. If you are replying to one, the manufacturing topic above reaches the same desk.</div>
   </div>
 </section>
+</main>
 
 <footer class="site">
   <div class="wrap">
     <a class="wordmark" href="index.html">OXIQEL</a>
-    <nav class="foot">
+    <nav class="foot" aria-label="Footer">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="ecosystem.html">Ecosystem</a>
@@ -68,7 +72,8 @@
     </nav>
     <p>OXIQEL is a gaming hardware company in development. The company is in formation and no product has been manufactured yet.</p>
     <p>Preview site. Nothing is for sale yet and checkout is locked.</p>
-    <p>&copy; 2026 OXIQEL. All rights reserved.</p>
+    <div class="legal"><span>&copy; 2026 OXIQEL. All rights reserved.</span><span>Concept line drawings shown; no finished device exists yet.</span></div>
+    <div class="giant" aria-hidden="true">OXIQEL</div>
   </div>
 </footer>
 

@@ -15,11 +15,12 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="statusbar">Preview site. OXIQEL is in development. Nothing is for sale yet and checkout is locked.</div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="statusbar"><span class="dot" aria-hidden="true">●</span>Preview site. OXIQEL is in development. Nothing is for sale yet and checkout is locked.</div>
 <header class="site">
   <div class="wrap">
     <a class="wordmark" href="index.html"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#151b29"/><g fill="#e8ecf3"><polygon points="10,10 22,10 22,54 10,54"/><polygon points="26,10 42,10 30,30"/><polygon points="26,34 31,34 44,54 28,54"/></g><rect x="50" y="10" width="4" height="44" fill="#3b82f6"/></svg>OXIQEL</a>
-    <nav class="main">
+    <nav class="main" aria-label="Main">
       <a class="current" aria-current="page" href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="ecosystem.html">Ecosystem</a>
@@ -30,80 +31,116 @@
   </div>
 </header>
 
+<main id="main">
 <div class="hero">
   <div class="wrap">
-    <h1>One account. <span>Every screen you play on.</span></h1>
-    <p>OXIQEL is building a family of gaming hardware around a single account: a home console, a handheld, a cloud streaming device, a controller, display glasses and a VR headset. The research and engineering record behind every device is published in our own documents, and every performance figure in it is labelled a design target until a prototype measures it.</p>
-    <a class="cta" href="products.html">See the product line</a>
-    <a class="cta alt" href="ecosystem.html">How the ecosystem works</a>
+    <p class="kicker">Gaming hardware · In development</p>
+    <h1 class="display">One account. <span>Every screen you play on.</span></h1>
+    <p class="intro">OXIQEL is building a family of gaming hardware around a single account: a home console, a handheld, a cloud streaming device, a controller, display glasses and a VR headset. The research and engineering record behind every device is published in our own documents, and every performance figure in it is labelled a design target until a prototype measures it.</p>
+    <div class="ctas">
+      <a class="cta" href="products.html">See the product line <span class="arr" aria-hidden="true">→</span></a>
+      <a class="cta alt" href="ecosystem.html">How the ecosystem works</a>
+    </div>
+    <dl class="datastrip">
+      <div><dt>Devices in the line</dt><dd>6</dd></div>
+      <div><dt>Account</dt><dd>1, shared by all</dd></div>
+      <div><dt>Prices published</dt><dd>None</dd></div>
+      <div><dt>Checkout</dt><dd class="lock">LOCKED</dd></div>
+    </dl>
+    <div class="figstrip" role="img" aria-label="Concept line drawings of the six OXIQEL devices: ONE console, GO handheld, CAST cloud device, CONTROL controller, VISION AIR display glasses and VISION headset.">
+      <figure>
+        <svg viewBox="0 0 120 74" fill="none" stroke="#c9d4e6" stroke-width="2" aria-hidden="true"><rect x="14" y="30" width="92" height="16" rx="3"/><path d="M24 35v6M31 35v6M38 35v6" stroke-width="1.5"/><circle cx="96" cy="38" r="2.4" fill="#3b82f6" stroke="none"/><path d="M10 54h100" stroke="#5b6b8c" stroke-width="1.5"/></svg>
+        <figcaption><b>OXIQEL ONE</b><br>Home console</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 120 74" fill="none" stroke="#c9d4e6" stroke-width="2" aria-hidden="true"><rect x="10" y="18" width="100" height="38" rx="9"/><rect x="35" y="25" width="50" height="24" rx="2"/><circle cx="22" cy="37" r="3.6"/><circle cx="98" cy="37" r="3.6"/><circle cx="91" cy="30" r="1.6" fill="#3b82f6" stroke="none"/></svg>
+        <figcaption><b>OXIQEL GO</b><br>Handheld</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 120 74" fill="none" stroke="#c9d4e6" stroke-width="2" aria-hidden="true"><rect x="38" y="28" width="44" height="28" rx="7"/><circle cx="60" cy="42" r="2.4" fill="#3b82f6" stroke="none"/><path d="M50 18a14 14 0 0 1 20 0M44 11a24 24 0 0 1 32 0" stroke="#3b82f6" stroke-width="1.8"/></svg>
+        <figcaption><b>OXIQEL CAST</b><br>Cloud device</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 120 74" fill="none" stroke="#c9d4e6" stroke-width="2" aria-hidden="true"><rect x="14" y="22" width="92" height="30" rx="15"/><path d="M26 48 20 62M94 48l6 14" /><circle cx="44" cy="37" r="5"/><circle cx="66" cy="42" r="5"/><circle cx="88" cy="31" r="1.8" fill="#3b82f6" stroke="none"/><circle cx="95" cy="38" r="1.8" fill="#3b82f6" stroke="none"/></svg>
+        <figcaption><b>OXIQEL CONTROL</b><br>Controller</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 120 74" fill="none" stroke="#c9d4e6" stroke-width="2" aria-hidden="true"><rect x="12" y="28" width="36" height="22" rx="5"/><rect x="72" y="28" width="36" height="22" rx="5"/><path d="M48 34q12-7 24 0M12 33 4 29M108 33l8-4"/></svg>
+        <figcaption><b>VISION AIR</b><br>Display glasses</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 120 74" fill="none" stroke="#c9d4e6" stroke-width="2" aria-hidden="true"><rect x="16" y="22" width="88" height="32" rx="13"/><circle cx="45" cy="38" r="6.5"/><circle cx="75" cy="38" r="6.5"/><path d="M22 24q38-16 76 0" stroke="#3b82f6" stroke-width="1.8"/></svg>
+        <figcaption><b>OXIQEL VISION</b><br>VR headset</figcaption>
+      </figure>
+    </div>
+    <p class="figcap">Concept line drawings from the engineering record. No product photography exists yet, so nothing on this site pretends to show you a finished device.</p>
   </div>
 </div>
 
 <section class="block">
   <div class="wrap">
-    <h2 class="title">The product line</h2>
-    <p class="lede">Six devices, one account, one library. Every device below is in development. No product photography exists yet, so nothing on this site pretends to show you a finished device.</p>
-    <div class="cards">
-      <div class="card">
-        <span class="tag">Home Console</span>
-        <h3>OXIQEL ONE</h3>
-        <p>A compact living room console built on a catalogue AMD APU, positioned honestly as a living room PC class machine for indie, back catalogue, esports and cloud play.</p>
-        <span class="status">In development</span><br>
-        <a class="more" href="products.html#one">Product details</a>
-      </div>
-      <div class="card">
-        <span class="tag">Handheld</span>
-        <h3>OXIQEL GO</h3>
-        <p>An OLED handheld designed around the Ryzen Z series, dockable to a television, with native and cloud play on the same account as the console.</p>
-        <span class="status">In development</span><br>
-        <a class="more" href="products.html#go">Product details</a>
-      </div>
-      <div class="card">
-        <span class="tag">Cloud Device</span>
-        <h3>OXIQEL CAST</h3>
-        <p>A small streaming client for the television. It renders nothing locally; it decodes the stream from your own console or PC at home first, and from the cloud when that service exists.</p>
-        <span class="status">In development</span><br>
-        <a class="more" href="products.html#cast">Product details</a>
-      </div>
-      <div class="card">
-        <span class="tag">Controller</span>
-        <h3>OXIQEL CONTROL</h3>
-        <p>A wireless controller built on an established manufacturing platform, set apart by Hall effect and TMR stick modules that have no potentiometer wear or drift mechanism.</p>
-        <span class="status">In development</span><br>
-        <a class="more" href="products.html#control">Product details</a>
-      </div>
-      <div class="card">
-        <span class="tag">Display Glasses</span>
-        <h3>OXIQEL VISION AIR</h3>
-        <p>A wearable monitor: a private big screen that plugs into a host over USB C. It is a display, with no tracking and no virtual reality, and it will never be sold as one.</p>
-        <span class="status">In development</span><br>
-        <a class="more" href="products.html#vision-air">Product details</a>
-      </div>
-      <div class="card">
-        <span class="tag">VR Headset</span>
-        <h3>OXIQEL VISION</h3>
-        <p>A standalone VR and MR headset planned on a published reference design, sequenced last in the line, after the account and store exist to support it.</p>
-        <span class="status">In development</span><br>
-        <a class="more" href="products.html#vision">Product details</a>
-      </div>
+    <p class="kicker"><span class="no">01</span> The product line</p>
+    <h2 class="title">Six devices. One library.</h2>
+    <p class="lede">Six devices, one account, one library. Every device below is in development.</p>
+    <div class="idx">
+      <a class="idxrow rv" href="products.html#one">
+        <span class="no">01</span>
+        <span class="nm"><b>OXIQEL ONE</b><i>Home Console</i></span>
+        <span class="ds">A compact living room console built on a catalogue AMD APU, positioned honestly as a living room PC class machine for indie, back catalogue, esports and cloud play.</span>
+        <span class="st"><span class="chip">In development</span><span class="arr" aria-hidden="true">→</span></span>
+      </a>
+      <a class="idxrow rv" href="products.html#go">
+        <span class="no">02</span>
+        <span class="nm"><b>OXIQEL GO</b><i>Handheld</i></span>
+        <span class="ds">An OLED handheld designed around the Ryzen Z series, dockable to a television, with native and cloud play on the same account as the console.</span>
+        <span class="st"><span class="chip">In development</span><span class="arr" aria-hidden="true">→</span></span>
+      </a>
+      <a class="idxrow rv" href="products.html#cast">
+        <span class="no">03</span>
+        <span class="nm"><b>OXIQEL CAST</b><i>Cloud Device</i></span>
+        <span class="ds">A small streaming client for the television. It renders nothing locally; it decodes the stream from your own console or PC at home first, and from the cloud when that service exists.</span>
+        <span class="st"><span class="chip">In development</span><span class="arr" aria-hidden="true">→</span></span>
+      </a>
+      <a class="idxrow rv" href="products.html#control">
+        <span class="no">04</span>
+        <span class="nm"><b>OXIQEL CONTROL</b><i>Controller</i></span>
+        <span class="ds">A wireless controller built on an established manufacturing platform, set apart by Hall effect and TMR stick modules that have no potentiometer wear or drift mechanism.</span>
+        <span class="st"><span class="chip">In development</span><span class="arr" aria-hidden="true">→</span></span>
+      </a>
+      <a class="idxrow rv" href="products.html#vision-air">
+        <span class="no">05</span>
+        <span class="nm"><b>OXIQEL VISION AIR</b><i>Display Glasses</i></span>
+        <span class="ds">A wearable monitor: a private big screen that plugs into a host over USB C. It is a display, with no tracking and no virtual reality, and it will never be sold as one.</span>
+        <span class="st"><span class="chip">In development</span><span class="arr" aria-hidden="true">→</span></span>
+      </a>
+      <a class="idxrow rv" href="products.html#vision">
+        <span class="no">06</span>
+        <span class="nm"><b>OXIQEL VISION</b><i>VR Headset</i></span>
+        <span class="ds">A standalone VR and MR headset planned on a published reference design, sequenced last in the line, after the account and store exist to support it.</span>
+        <span class="st"><span class="chip">In development</span><span class="arr" aria-hidden="true">→</span></span>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="block band">
   <div class="wrap">
-    <h2 class="title">The OXIQEL standard</h2>
+    <p class="kicker"><span class="no">02</span> The OXIQEL standard</p>
+    <h2 class="title">Three rules the line never breaks</h2>
     <p class="lede">Three rules the product line never breaks.</p>
     <div class="cards">
-      <div class="card">
+      <div class="card rv">
+        <span class="rule-no">RULE / 01</span>
         <h3>Targets are labelled targets</h3>
         <p>Every frame rate, resolution and battery figure in our engineering record is marked as a design target, not achieved and not tested, until a real prototype measures it. Marketing never quotes a target as a result.</p>
       </div>
-      <div class="card">
+      <div class="card rv">
+        <span class="rule-no">RULE / 02</span>
         <h3>Quotes before prices</h3>
         <p>No price appears on this site until a written manufacturer quotation supports it. Cost models built from public prices are planning estimates, and they are labelled that way wherever they are used.</p>
       </div>
-      <div class="card">
+      <div class="card rv">
+        <span class="rule-no">RULE / 03</span>
         <h3>Evidence before status</h3>
         <p>Orders, shipping and refunds in the OXIQEL DIRECT design move only on evidence: a payment confirmed by the processor, a shipment confirmed by the carrier, a refund confirmed on completion. Nothing is marked done on a promise.</p>
       </div>
@@ -113,15 +150,25 @@
 
 <section class="block">
   <div class="wrap">
+    <p class="kicker"><span class="no">03</span> Program status</p>
     <h2 class="title">Where the program stands</h2>
     <p class="lede">Research and prototype stage, stated plainly. Engineering specifications and cost models are complete for all six products. Written requests for quotation went to seven manufacturers on 16 November 2026 and replies are still awaited, so no manufacturer is under agreement and no production date exists. The storefront configurator and the order gateway run as tested prototypes with checkout locked. When a date is real, it will be posted here first.</p>
+    <dl class="ledger rv">
+      <div class="lrow"><dt>Program stage</dt><dd>Research and prototype</dd></div>
+      <div class="lrow"><dt>Specifications and cost models</dt><dd>Complete for all six products</dd></div>
+      <div class="lrow"><dt>Manufacturer quotations</dt><dd>Requested 16 November 2026 · Replies awaited</dd></div>
+      <div class="lrow"><dt>Manufacturer agreements</dt><dd>None</dd></div>
+      <div class="lrow"><dt>Production date</dt><dd>None set</dd></div>
+      <div class="lrow"><dt>Checkout</dt><dd class="lock">Locked</dd></div>
+    </dl>
     <div class="note">Nothing on this site is an offer to sell. Prices are not shown because no verified manufacturer quotation exists yet. Production lead times will be published only from verified manufacturer data.</div>
   </div>
 </section>
 
 <section class="block tight" id="launch-list">
   <div class="wrap">
-    <div class="signup">
+    <div class="signup rv">
+      <p class="kicker">Launch list</p>
       <h2 class="title">Be first to know when hardware is real</h2>
       <p>The product line is in development and nothing is for sale yet. Join the launch list and we will write when the first device has a verified price and a real order window. No date is promised, and your address is used only for launch news.</p>
       <form class="signup" method="post" action="#">
@@ -133,11 +180,12 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer class="site">
   <div class="wrap">
     <a class="wordmark" href="index.html">OXIQEL</a>
-    <nav class="foot">
+    <nav class="foot" aria-label="Footer">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="ecosystem.html">Ecosystem</a>
@@ -147,7 +195,8 @@
     </nav>
     <p>OXIQEL is a gaming hardware company in development. The company is in formation and no product has been manufactured yet.</p>
     <p>Preview site. Nothing is for sale yet and checkout is locked.</p>
-    <p>&copy; 2026 OXIQEL. All rights reserved.</p>
+    <div class="legal"><span>&copy; 2026 OXIQEL. All rights reserved.</span><span>Concept line drawings shown; no finished device exists yet.</span></div>
+    <div class="giant" aria-hidden="true">OXIQEL</div>
   </div>
 </footer>
 

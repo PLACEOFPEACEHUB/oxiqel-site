@@ -15,11 +15,12 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="statusbar">Preview site. OXIQEL is in development. Nothing is for sale yet and checkout is locked.</div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="statusbar"><span class="dot" aria-hidden="true">●</span>Preview site. OXIQEL is in development. Nothing is for sale yet and checkout is locked.</div>
 <header class="site">
   <div class="wrap">
     <a class="wordmark" href="index.html"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#151b29"/><g fill="#e8ecf3"><polygon points="10,10 22,10 22,54 10,54"/><polygon points="26,10 42,10 30,30"/><polygon points="26,34 31,34 44,54 28,54"/></g><rect x="50" y="10" width="4" height="44" fill="#3b82f6"/></svg>OXIQEL</a>
-    <nav class="main">
+    <nav class="main" aria-label="Main">
       <a href="index.html">Home</a>
       <a class="current" aria-current="page" href="products.html">Products</a>
       <a href="ecosystem.html">Ecosystem</a>
@@ -30,79 +31,99 @@
   </div>
 </header>
 
+<main id="main">
 <section class="block">
   <div class="wrap">
-    <h2 class="title">Products</h2>
+    <p class="kicker">Product line · Design targets</p>
+    <h1 class="title">Products</h1>
     <p class="lede">Every specification below comes from the OXIQEL engineering record and is a design target: not achieved, not tested, because no OXIQEL hardware has been built yet. Prices are not shown. A price appears here only when a written manufacturer quotation supports it.</p>
 
     <div class="product" id="one">
-      <span class="status">In development</span>
-      <h3>OXIQEL ONE: home console</h3>
+      <div class="phead"><span class="pno">01</span><h2>OXIQEL ONE: home console</h2><span class="chip">In development</span></div>
+      <figure class="fig">
+        <svg viewBox="0 0 560 260" fill="none" stroke="#c9d4e6" stroke-width="2.5" aria-hidden="true"><rect x="90" y="104" width="380" height="54" rx="8"/><path d="M90 122h380" stroke-width="1.5" stroke="#5b6b8c"/><path d="M118 132v14M132 132v14M146 132v14M160 132v14" stroke-width="2"/><circle cx="428" cy="139" r="4" fill="#3b82f6" stroke="none"/><path d="M118 158v10M442 158v10" stroke-width="2"/><path d="M60 104v54M54 104h12M54 158h12" stroke="#5b6b8c" stroke-width="1.5"/><path d="M90 196h380M90 190v12M470 190v12" stroke="#5b6b8c" stroke-width="1.5"/><path d="M40 226h480" stroke="#5b6b8c" stroke-width="1.5" stroke-dasharray="5 6"/></svg>
+        <figcaption>Fig. 01 — OXIQEL ONE, front elevation · Concept line drawing, not a product render</figcaption>
+      </figure>
       <p>A compact living room console built on a catalogue AMD APU, the Ryzen 7 8700G class, on a compact board from a manufacturing partner. The honest positioning matters to us: there is no console class custom chip a company at our volume can buy, so ONE is designed and described as a compact living room PC for indie, back catalogue, esports class and cloud gaming, never as a rival to a subsidised flagship console.</p>
-      <dl>
-        <div><dt>Design target: primary mode</dt><dd>1080p play, with upscaled output above it. Target only, not achieved.</dd></div>
-        <div><dt>Memory and storage</dt><dd>16 GB DDR5 in the base design, 32 GB recommended above it. Storage 1 TB to 4 TB on a user replaceable M.2 NVMe slot.</dd></div>
-        <div><dt>Connections</dt><dd>HDMI 2.1 output, USB A and USB C, Gigabit Ethernet or better, Wi-Fi 6E, Bluetooth 5 class for controllers.</dd></div>
-        <div><dt>Disc drive</dt><dd>None in generation one. A USB external drive can be an accessory.</dd></div>
+      <dl class="specs">
+        <div class="srow"><dt>Design target: primary mode</dt><dd>1080p play, with upscaled output above it. Target only, not achieved.</dd></div>
+        <div class="srow"><dt>Memory and storage</dt><dd>16 GB DDR5 in the base design, 32 GB recommended above it. Storage 1 TB to 4 TB on a user replaceable M.2 NVMe slot.</dd></div>
+        <div class="srow"><dt>Connections</dt><dd>HDMI 2.1 output, USB A and USB C, Gigabit Ethernet or better, Wi-Fi 6E, Bluetooth 5 class for controllers.</dd></div>
+        <div class="srow"><dt>Disc drive</dt><dd>None in generation one. A USB external drive can be an accessory.</dd></div>
       </dl>
     </div>
 
     <div class="product" id="go">
-      <span class="status">In development</span>
-      <h3>OXIQEL GO: handheld</h3>
+      <div class="phead"><span class="pno">02</span><h2>OXIQEL GO: handheld</h2><span class="chip">In development</span></div>
+      <figure class="fig">
+        <svg viewBox="0 0 560 260" fill="none" stroke="#c9d4e6" stroke-width="2.5" aria-hidden="true"><rect x="70" y="58" width="420" height="142" rx="26"/><rect x="152" y="80" width="256" height="98" rx="6"/><circle cx="111" cy="106" r="13"/><circle cx="111" cy="106" r="5" stroke-width="1.5"/><path d="M111 146v22M100 157h22" stroke-width="2"/><circle cx="449" cy="100" r="5"/><circle cx="465" cy="116" r="5"/><circle cx="433" cy="116" r="5"/><circle cx="449" cy="132" r="5"/><circle cx="449" cy="160" r="13"/><circle cx="449" cy="160" r="5" stroke-width="1.5"/><path d="M96 58v-8M464 58v-8" stroke-width="2"/><path d="M40 226h480" stroke="#5b6b8c" stroke-width="1.5" stroke-dasharray="5 6"/></svg>
+        <figcaption>Fig. 02 — OXIQEL GO, front elevation · Concept line drawing, not a product render</figcaption>
+      </figure>
       <p>An OLED handheld designed around the AMD Ryzen Z series, with the flagship design on the Z2 Extreme class part and a base design on the Z1 Extreme class, supply permitting and confirmed in writing. GO docks over USB C to a television and carries the same account and library as ONE. Battery expectations are set by arithmetic, not adjectives: a handheld in this power class runs demanding titles for roughly one and a half to two and a half hours, and lighter titles longer. No all day gaming claim will ever appear here.</p>
-      <dl>
-        <div><dt>Design target: display</dt><dd>8.0 to 8.8 inch OLED, 1920 by 1200, 120 Hz, variable refresh. Target only, not achieved.</dd></div>
-        <div><dt>Memory and storage</dt><dd>16 GB LPDDR5X, 32 GB on the premium design. M.2 2230 NVMe 512 GB to 2 TB, microSD expansion.</dd></div>
-        <div><dt>Controls</dt><dd>Integrated Hall effect sticks and triggers, six axis motion sensing.</dd></div>
-        <div><dt>Power profiles</dt><dd>Designed around 10 W battery, 17 W balanced and 25 W plugged profiles, with a higher docked profile described as a docked profile, not a second product.</dd></div>
+      <dl class="specs">
+        <div class="srow"><dt>Design target: display</dt><dd>8.0 to 8.8 inch OLED, 1920 by 1200, 120 Hz, variable refresh. Target only, not achieved.</dd></div>
+        <div class="srow"><dt>Memory and storage</dt><dd>16 GB LPDDR5X, 32 GB on the premium design. M.2 2230 NVMe 512 GB to 2 TB, microSD expansion.</dd></div>
+        <div class="srow"><dt>Controls</dt><dd>Integrated Hall effect sticks and triggers, six axis motion sensing.</dd></div>
+        <div class="srow"><dt>Power profiles</dt><dd>Designed around 10 W battery, 17 W balanced and 25 W plugged profiles, with a higher docked profile described as a docked profile, not a second product.</dd></div>
       </dl>
     </div>
 
     <div class="product" id="cast">
-      <span class="status">In development</span>
-      <h3>OXIQEL CAST: cloud device</h3>
+      <div class="phead"><span class="pno">03</span><h2>OXIQEL CAST: cloud device</h2><span class="chip">In development</span></div>
+      <figure class="fig">
+        <svg viewBox="0 0 560 260" fill="none" stroke="#c9d4e6" stroke-width="2.5" aria-hidden="true"><path d="M252 62a40 40 0 0 1 56 0M236 44a64 64 0 0 1 88 0M220 26a88 88 0 0 1 120 0" stroke="#3b82f6" stroke-width="2"/><rect x="185" y="98" width="190" height="96" rx="18"/><circle cx="280" cy="146" r="5" fill="#3b82f6" stroke="none"/><rect x="330" y="128" width="30" height="14" rx="2" stroke-width="2"/><path d="M150 194h260" stroke-width="2"/><path d="M40 226h480" stroke="#5b6b8c" stroke-width="1.5" stroke-dasharray="5 6"/></svg>
+        <figcaption>Fig. 03 — OXIQEL CAST, front elevation · Concept line drawing, not a product render</figcaption>
+      </figure>
       <p>CAST renders nothing locally except video decode and the interface. The game runs somewhere else: first on your own ONE or PC on your home network, the lowest latency and lowest cost mode, and on a cloud service when that service exists. The box variant is the recommended design because it allows a proper heatsink, wired Ethernet and USB for controllers. CAST generation one is a streaming client for the OXIQEL ecosystem, not a general smart television platform, and it claims no streaming service certification it does not hold.</p>
-      <dl>
-        <div><dt>Design target: decode</dt><dd>Hardware AV1, H.265 and H.264 decode to 4K60 with HDR10. Target only, not achieved.</dd></div>
-        <div><dt>Box design</dt><dd>4 GB memory, 32 GB storage, Gigabit Ethernet, Wi-Fi 6, Bluetooth 5 class.</dd></div>
-        <div><dt>Latency</dt><dd>Design budget: CAST itself adds under 10 ms of decode and display latency at 1080p60. Total cloud latency depends on network distance and is never marketed as a single guaranteed number.</dd></div>
+      <dl class="specs">
+        <div class="srow"><dt>Design target: decode</dt><dd>Hardware AV1, H.265 and H.264 decode to 4K60 with HDR10. Target only, not achieved.</dd></div>
+        <div class="srow"><dt>Box design</dt><dd>4 GB memory, 32 GB storage, Gigabit Ethernet, Wi-Fi 6, Bluetooth 5 class.</dd></div>
+        <div class="srow"><dt>Latency</dt><dd>Design budget: CAST itself adds under 10 ms of decode and display latency at 1080p60. Total cloud latency depends on network distance and is never marketed as a single guaranteed number.</dd></div>
       </dl>
     </div>
 
     <div class="product" id="control">
-      <span class="status">In development</span>
-      <h3>OXIQEL CONTROL: controller</h3>
+      <div class="phead"><span class="pno">04</span><h2>OXIQEL CONTROL: controller</h2><span class="chip">In development</span></div>
+      <figure class="fig">
+        <svg viewBox="0 0 560 260" fill="none" stroke="#c9d4e6" stroke-width="2.5" aria-hidden="true"><rect x="112" y="126" width="36" height="80" rx="17" transform="rotate(13 130 166)"/><rect x="412" y="126" width="36" height="80" rx="17" transform="rotate(-13 430 166)"/><rect x="110" y="66" width="340" height="90" rx="45"/><circle cx="208" cy="106" r="16"/><circle cx="208" cy="106" r="6" stroke-width="1.5"/><circle cx="330" cy="126" r="16"/><circle cx="330" cy="126" r="6" stroke-width="1.5"/><path d="M160 118v24M148 130h24" stroke-width="2"/><circle cx="394" cy="88" r="6"/><circle cx="412" cy="106" r="6"/><circle cx="394" cy="124" r="6"/><circle cx="376" cy="106" r="6"/><rect x="266" y="86" width="28" height="10" rx="5" stroke-width="2"/><path d="M40 226h480" stroke="#5b6b8c" stroke-width="1.5" stroke-dasharray="5 6"/></svg>
+        <figcaption>Fig. 04 — OXIQEL CONTROL, front elevation · Concept line drawing, not a product render</figcaption>
+      </figure>
       <p>CONTROL starts from an established manufacturing platform with a proven radio and board, and differentiates where it is cheap and visible: shell design, grip texture, button feel, back button layout and firmware. The differentiator is the stick modules: Hall effect and TMR sensing, which read stick position magnetically and have no potentiometer contact to wear, the mechanism behind stick drift. Replacement Hall modules are a published retail product category, and the manufacturing shortlist for CONTROL is built around the suppliers of that platform.</p>
-      <dl>
-        <div><dt>Sticks and triggers</dt><dd>Hall effect or TMR sticks, Hall effect analogue triggers, remappable back buttons, six axis motion sensing.</dd></div>
-        <div><dt>Connections</dt><dd>Bluetooth LE, a 2.4 GHz dongle mode and USB C wired, with pairing for three hosts.</dd></div>
-        <div><dt>Software</dt><dd>Full remapping, dead zone curves and trigger settings in the configuration app. Adjustable dead zones are also an accessibility feature.</dd></div>
-        <div><dt>Deliberately not promised</dt><dd>Adaptive triggers and voice coil haptics are not in the baseline design. That mechanism sits in an active patent area and needs intellectual property review before any imitation.</dd></div>
+      <dl class="specs">
+        <div class="srow"><dt>Sticks and triggers</dt><dd>Hall effect or TMR sticks, Hall effect analogue triggers, remappable back buttons, six axis motion sensing.</dd></div>
+        <div class="srow"><dt>Connections</dt><dd>Bluetooth LE, a 2.4 GHz dongle mode and USB C wired, with pairing for three hosts.</dd></div>
+        <div class="srow"><dt>Software</dt><dd>Full remapping, dead zone curves and trigger settings in the configuration app. Adjustable dead zones are also an accessibility feature.</dd></div>
+        <div class="srow"><dt>Deliberately not promised</dt><dd>Adaptive triggers and voice coil haptics are not in the baseline design. That mechanism sits in an active patent area and needs intellectual property review before any imitation.</dd></div>
       </dl>
     </div>
 
     <div class="product" id="vision-air">
-      <span class="status">In development</span>
-      <h3>OXIQEL VISION AIR: display glasses</h3>
+      <div class="phead"><span class="pno">05</span><h2>OXIQEL VISION AIR: display glasses</h2><span class="chip">In development</span></div>
+      <figure class="fig">
+        <svg viewBox="0 0 560 260" fill="none" stroke="#c9d4e6" stroke-width="2.5" aria-hidden="true"><rect x="92" y="92" width="148" height="82" rx="14"/><rect x="320" y="92" width="148" height="82" rx="14"/><path d="M240 110q40-18 80 0"/><path d="M92 106 40 100M468 106l52-6" /><path d="M150 174l-6 14M410 174l6 14" stroke-width="2"/><circle cx="166" cy="133" r="3" fill="#3b82f6" stroke="none"/><circle cx="394" cy="133" r="3" fill="#3b82f6" stroke="none"/><path d="M40 226h480" stroke="#5b6b8c" stroke-width="1.5" stroke-dasharray="5 6"/></svg>
+        <figcaption>Fig. 05 — OXIQEL VISION AIR, front elevation · Concept line drawing, not a product render</figcaption>
+      </figure>
       <p>VISION AIR is a wearable monitor. It is not a VR headset, it has no positional tracking, and it must never be described as virtual reality or spatial computing. The image sits in front of your eyes and moves with your head, exactly like the leading products in its category, which carry no battery, no processor and no operating system of their own: they are powered and fed video by the host over USB C. VISION AIR is the natural companion to GO: a private big screen for a handheld.</p>
-      <dl>
-        <div><dt>Design target: panels</dt><dd>Micro OLED, 1920 by 1080 per eye, 120 Hz, birdbath optics, 50 degree field of view target. Target only, not achieved.</dd></div>
-        <div><dt>Host connection</dt><dd>USB C DisplayPort Alt Mode video and power. Hosts without DisplayPort Alt Mode output will not work, and that fact will be printed on the box.</dd></div>
-        <div><dt>Fit</dt><dd>Design target under 75 g, adjustable nose pads and temples, a prescription insert program or built in diopter adjustment.</dd></div>
-        <div><dt>Tracking</dt><dd>None. Zero degrees of freedom. An optional software screen pinning feature may be validated later and would still not make this a VR product.</dd></div>
+      <dl class="specs">
+        <div class="srow"><dt>Design target: panels</dt><dd>Micro OLED, 1920 by 1080 per eye, 120 Hz, birdbath optics, 50 degree field of view target. Target only, not achieved.</dd></div>
+        <div class="srow"><dt>Host connection</dt><dd>USB C DisplayPort Alt Mode video and power. Hosts without DisplayPort Alt Mode output will not work, and that fact will be printed on the box.</dd></div>
+        <div class="srow"><dt>Fit</dt><dd>Design target under 75 g, adjustable nose pads and temples, a prescription insert program or built in diopter adjustment.</dd></div>
+        <div class="srow"><dt>Tracking</dt><dd>None. Zero degrees of freedom. An optional software screen pinning feature may be validated later and would still not make this a VR product.</dd></div>
       </dl>
     </div>
 
     <div class="product" id="vision">
-      <span class="status">In development</span>
-      <h3>OXIQEL VISION: VR headset</h3>
+      <div class="phead"><span class="pno">06</span><h2>OXIQEL VISION: VR headset</h2><span class="chip">In development</span></div>
+      <figure class="fig">
+        <svg viewBox="0 0 560 260" fill="none" stroke="#c9d4e6" stroke-width="2.5" aria-hidden="true"><path d="M118 82q162-58 324 0" stroke="#3b82f6" stroke-width="2"/><rect x="80" y="78" width="400" height="112" rx="40"/><circle cx="212" cy="134" r="31"/><circle cx="212" cy="134" r="14" stroke-width="1.5"/><circle cx="348" cy="134" r="31"/><circle cx="348" cy="134" r="14" stroke-width="1.5"/><path d="M252 190q28-13 56 0" stroke-width="2"/><path d="M84 108 52 118M476 108l32 10" stroke="#5b6b8c" stroke-width="1.5" stroke-dasharray="5 5"/><path d="M40 226h480" stroke="#5b6b8c" stroke-width="1.5" stroke-dasharray="5 6"/></svg>
+        <figcaption>Fig. 06 — OXIQEL VISION, front elevation · Concept line drawing, not a product render</figcaption>
+      </figure>
       <p>A standalone VR and MR headset planned on the Qualcomm XR2 Gen 2 class reference design ecosystem, the same published route the industry uses to bring headsets to market without reinventing tracking. VISION is sequenced last in the line on purpose: a headset with no content ecosystem is the hardest product in the catalogue to support, so it launches after the account, the store and the other devices exist. Camera, passthrough and hand tracking data are privacy sensitive by design: on device processing by default, explicit permission prompts, and a recording indicator that applications cannot disable.</p>
-      <dl>
-        <div><dt>Design target: platform</dt><dd>XR2 Gen 2 class processor, 8 GB memory, 128 GB storage in the base design, with a wired and wireless PC link mode as a feature.</dd></div>
-        <div><dt>Design target: displays</dt><dd>Dual LCD at 2064 by 2208 per eye class, pancake optics, 90 Hz default with a 120 Hz experimental mode. Targets only, not achieved.</dd></div>
-        <div><dt>Tracking</dt><dd>Inside out six degree of freedom tracking, controller and hand tracking, full colour passthrough for mixed reality.</dd></div>
-        <div><dt>Application standard</dt><dd>The OpenXR application interface is the portability commitment. No conformance branding is used until the formal adopter and testing process is complete.</dd></div>
+      <dl class="specs">
+        <div class="srow"><dt>Design target: platform</dt><dd>XR2 Gen 2 class processor, 8 GB memory, 128 GB storage in the base design, with a wired and wireless PC link mode as a feature.</dd></div>
+        <div class="srow"><dt>Design target: displays</dt><dd>Dual LCD at 2064 by 2208 per eye class, pancake optics, 90 Hz default with a 120 Hz experimental mode. Targets only, not achieved.</dd></div>
+        <div class="srow"><dt>Tracking</dt><dd>Inside out six degree of freedom tracking, controller and hand tracking, full colour passthrough for mixed reality.</dd></div>
+        <div class="srow"><dt>Application standard</dt><dd>The OpenXR application interface is the portability commitment. No conformance branding is used until the formal adopter and testing process is complete.</dd></div>
       </dl>
     </div>
   </div>
@@ -110,6 +131,7 @@
 
 <section class="block band">
   <div class="wrap">
+    <p class="kicker">Configurator · Prototype</p>
     <h2 class="title">Build your console: configurator prototype</h2>
     <p class="lede">The configurator below is the working prototype of the OXIQEL DIRECT order flow. It records a configuration and shows the order rules honestly: no price exists until a verified manufacturer quotation does, and checkout is locked until manufacturing, payments, legal and support are all verified end to end.</p>
     <div class="config">
@@ -153,11 +175,12 @@
     <div class="note">This is not an offer to sell. When ordering opens, the flow is the OXIQEL DIRECT design: an order is an offer to buy, accepted only when the manufacturer confirms production capacity, and every status after that moves on evidence from the payment processor and the carrier.</div>
   </div>
 </section>
+</main>
 
 <footer class="site">
   <div class="wrap">
     <a class="wordmark" href="index.html">OXIQEL</a>
-    <nav class="foot">
+    <nav class="foot" aria-label="Footer">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="ecosystem.html">Ecosystem</a>
@@ -167,7 +190,8 @@
     </nav>
     <p>OXIQEL is a gaming hardware company in development. The company is in formation and no product has been manufactured yet.</p>
     <p>Preview site. Nothing is for sale yet and checkout is locked.</p>
-    <p>&copy; 2026 OXIQEL. All rights reserved.</p>
+    <div class="legal"><span>&copy; 2026 OXIQEL. All rights reserved.</span><span>Concept line drawings shown; no finished device exists yet.</span></div>
+    <div class="giant" aria-hidden="true">OXIQEL</div>
   </div>
 </footer>
 

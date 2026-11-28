@@ -15,11 +15,12 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="statusbar">Preview site. OXIQEL is in development. Nothing is for sale yet and checkout is locked.</div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="statusbar"><span class="dot" aria-hidden="true">●</span>Preview site. OXIQEL is in development. Nothing is for sale yet and checkout is locked.</div>
 <header class="site">
   <div class="wrap">
     <a class="wordmark" href="index.html"><svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#151b29"/><g fill="#e8ecf3"><polygon points="10,10 22,10 22,54 10,54"/><polygon points="26,10 42,10 30,30"/><polygon points="26,34 31,34 44,54 28,54"/></g><rect x="50" y="10" width="4" height="44" fill="#3b82f6"/></svg>OXIQEL</a>
-    <nav class="main">
+    <nav class="main" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="ecosystem.html">Ecosystem</a>
@@ -30,22 +31,24 @@
   </div>
 </header>
 
+<main id="main">
 <section class="block">
   <div class="wrap">
-    <h2 class="title">Support, designed before it is needed</h2>
+    <p class="kicker">Support · Designed in advance</p>
+    <h1 class="title">Support, designed before it is needed</h1>
     <p class="lede">No OXIQEL product has shipped, so there is nothing to support yet. What exists is the workflow design, built alongside the order system so that support is never improvised after the first sale. Every rule below is a design commitment, published now so it can be held against us later.</p>
     <div class="cards">
-      <div class="card">
+      <div class="card rv">
         <span class="tag">Warranty</span>
         <h3>Keyed to your serial number</h3>
         <p>Delivery confirmation starts the warranty clock, and the serial number registered from the supplier's own event is the warranty key. No paper registration is required. The standard term in the draft policy is a one year limited warranty, with the legal floors of each market applied where the law requires more.</p>
       </div>
-      <div class="card">
+      <div class="card rv">
         <span class="tag">Returns</span>
         <h3>Thirty days from delivery</h3>
         <p>The draft return window is thirty days from delivery, checked against launch market law before anything goes live. A return starts in the account, produces a return authorisation and a label, and the refund goes to the original payment method, marked complete only when the payment processor confirms it.</p>
       </div>
-      <div class="card">
+      <div class="card rv">
         <span class="tag">Channels</span>
         <h3>Written first</h3>
         <p>Support runs written first, by email and chat, in three tiers: account and order questions, technical help, then supplier and warranty escalation. Every ticket links the order's full audit history, and support may never promise a status the audit log does not show.</p>
@@ -55,11 +58,12 @@
     <p style="margin-top:26px">Questions about the program today go through the <a href="contact.html"><strong>contact page</strong></a>. The full draft terms live on the <a href="policies.html"><strong>policies page</strong></a>.</p>
   </div>
 </section>
+</main>
 
 <footer class="site">
   <div class="wrap">
     <a class="wordmark" href="index.html">OXIQEL</a>
-    <nav class="foot">
+    <nav class="foot" aria-label="Footer">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="ecosystem.html">Ecosystem</a>
@@ -69,8 +73,10 @@
     </nav>
     <p>OXIQEL is a gaming hardware company in development. The company is in formation and no product has been manufactured yet.</p>
     <p>Preview site. Nothing is for sale yet and checkout is locked.</p>
-    <p>&copy; 2026 OXIQEL. All rights reserved.</p>
+    <div class="legal"><span>&copy; 2026 OXIQEL. All rights reserved.</span><span>Concept line drawings shown; no finished device exists yet.</span></div>
+    <div class="giant" aria-hidden="true">OXIQEL</div>
   </div>
 </footer>
+
 </body>
 </html>
